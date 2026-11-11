@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>JavaHuset · Kaffe, te, delikatesser og gavekurve i Slagelse</title>
+<meta name="description" content="JavaHuset på Nygade 2 i Slagelse. Specialbutik med kaffe, te og delikatesser. Personlige gavekurve til hverdag og fest.">
+<style>
+  :root { --bg:#f6f1ea; --text:#2b2018; --muted:#75655a; --accent:#3f6b4a; --coffee:#6b4630; --card:#fffdf9; --line:#e6dccf; }
+  * { box-sizing:border-box; margin:0; }
+  html { scroll-behavior:smooth; }
+  body { background:var(--bg); color:var(--text); font:16px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif; }
+  a { color:inherit; }
+  .demo { background:var(--coffee); color:#fff; text-align:center; font-size:.8rem; padding:6px 12px; }
+  header { position:sticky; top:0; z-index:5; background:rgba(246,241,234,.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+  .nav { max-width:1000px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:12px 16px; }
+  .logo { text-decoration:none; font-family:Georgia,serif; font-size:1.35rem; }
+  .logo span { color:var(--accent); }
+  .nav nav a { margin-left:18px; text-decoration:none; color:var(--muted); font-size:.95rem; }
+  @media (max-width:640px){ .nav nav { display:none; } }
+  .hero { padding:72px 16px 60px; }
+  .hero .wrap { display:grid; grid-template-columns:1.1fr .9fr; gap:36px; align-items:center; }
+  @media (max-width:760px){ .hero .wrap { grid-template-columns:1fr; } }
+  .kicker { color:var(--accent); font-weight:700; letter-spacing:.14em; text-transform:uppercase; font-size:.78rem; }
+  .hero h1 { font-family:Georgia,serif; font-weight:400; font-size:clamp(2.2rem,6.5vw,3.7rem); line-height:1.1; margin:12px 0 16px; }
+  .hero p { color:var(--muted); max-width:460px; margin-bottom:26px; }
+  .btns { display:flex; gap:10px; flex-wrap:wrap; }
+  .btn { padding:13px 24px; border-radius:10px; text-decoration:none; font-weight:700; }
+  .btn.main { background:var(--accent); color:#fff; }
+  .btn.alt { border:1.5px solid var(--coffee); color:var(--coffee); }
+  .basket { aspect-ratio:1; max-width:360px; margin:auto; border-radius:28px; background:linear-gradient(160deg,#efe2cf,#e2cfb4); display:grid; place-items:center; font-size:6rem; box-shadow:0 22px 50px rgba(90,60,30,.15); border:1px solid var(--line); }
+  section { padding:60px 16px; }
+  .wrap { max-width:1000px; margin:auto; }
+  h2 { font-family:Georgia,serif; font-weight:400; font-size:clamp(1.7rem,4.5vw,2.4rem); margin-bottom:6px; }
+  .sub { color:var(--muted); margin-bottom:26px; }
+  .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px; }
+  .card .em { font-size:2rem; margin-bottom:6px; }
+  .card h3 { font-family:Georgia,serif; font-weight:400; font-size:1.25rem; margin-bottom:4px; }
+  .card p { color:var(--muted); font-size:.94rem; }
+  .gift { background:var(--accent); color:#fff; border-radius:24px; padding:36px 24px; display:grid; grid-template-columns:1fr auto; gap:20px; align-items:center; }
+  .gift p { color:#d9e7dc; margin-top:6px; }
+  .gift ul { color:#d9e7dc; margin:12px 0 0 18px; }
+  .gift .btn { background:#fff; color:var(--accent); white-space:nowrap; }
+  @media (max-width:760px){ .gift { grid-template-columns:1fr; } }
+  .info { display:grid; gap:16px; grid-template-columns:1fr 1fr; }
+  @media (max-width:760px){ .info { grid-template-columns:1fr; } }
+  iframe { width:100%; height:280px; border:0; border-radius:16px; }
+  .note { color:var(--muted); font-size:.92rem; margin-top:12px; }
+  footer { text-align:center; padding:28px 16px 96px; color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); }
+  .fab { position:fixed; bottom:14px; left:50%; transform:translateX(-50%); z-index:6; box-shadow:0 8px 24px rgba(40,70,50,.3); }
+  @media (min-width:761px){ .fab { display:none; } }
+</style>
+</head>
+<body>
+<div class="demo">Forslag til ny hjemmeside, lavet af Bertram Johansen. Ikke butikkens officielle side.</div>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#top">Java<span>Huset</span></a>
+    <nav><a href="#udvalg">Udvalg</a><a href="#gavekurve">Gavekurve</a><a href="#find">Find os</a></nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <span class="kicker">Specialbutik i hjertet af Slagelse</span>
+        <h1>Passion for kaffe, te &amp; delikatesser</h1>
+        <p>Friskmalet kaffe, løs te og lækre specialiteter. Og personlige gavekurve, sat sammen til lige netop din anledning.</p>
+        <div class="btns">
+          <a class="btn main" href="#gavekurve">Bestil en gavekurv</a>
+          <a class="btn alt" href="#find">Find butikken</a>
+        </div>
+      </div>
+      <div class="basket" aria-hidden="true">🧺</div>
+    </div>
+  </div>
+
+  <section id="udvalg">
+    <div class="wrap">
+      <h2>I butikken</h2>
+      <p class="sub">Kig forbi og få en snak om smag. Vi hjælper gerne.</p>
+      <div class="grid">
+        <div class="card"><div class="em">☕</div><h3>Kaffe</h3><p>Bønner fra hele verden, malet som du vil have den.</p></div>
+        <div class="card"><div class="em">🍵</div><h3>Te</h3><p>Løs te i mange varianter. Sort, grøn, urte og frugt.</p></div>
+        <div class="card"><div class="em">🍫</div><h3>Chokolade &amp; slik</h3><p>Det gode, til dig selv eller til en gave.</p></div>
+        <div class="card"><div class="em">🫒</div><h3>Delikatesser</h3><p>Specialiteter, øl og vin til hverdag og fest.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gavekurve" style="padding-top:0">
+    <div class="wrap">
+      <div class="gift">
+        <div>
+          <h2 style="color:#fff">Personlige gavekurve</h2>
+          <p>Til fødselsdag, jubilæum, tak for hjælpen eller firmaets julegaver. Fortæl os budget og anledning, så sætter vi kurven sammen.</p>
+          <ul><li>Fyldt med øl, vin, kaffe, chokolade og specialiteter</li><li>Til enhver pris og lejlighed</li><li>Også store bestillinger til firmaer</li></ul>
+        </div>
+        <a class="btn" href="tel:+4558520577">Ring: 58 52 05 77</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="find">
+    <div class="wrap">
+      <h2>Find os</h2>
+      <p class="sub">Midt i gågaden.</p>
+      <div class="info">
+        <div class="card">
+          <p><strong>JavaHuset</strong><br>Nygade 2, 4200 Slagelse</p>
+          <p class="note"><strong>Telefon:</strong> <a href="tel:+4558520577">58 52 05 77</a><br>
+          <strong>Mail:</strong> <a href="mailto:info@javahuset.dk">info@javahuset.dk</a></p>
+          <p class="note"><strong>Åbningstider:</strong> [indsættes fra butikken]</p>
+          <p class="note">
+            <a href="https://www.facebook.com/p/Javahuset-100063647766519/" target="_blank" rel="noopener">Facebook</a> ·
+            <a href="https://www.instagram.com/javahuset/" target="_blank" rel="noopener">Instagram</a>
+          </p>
+        </div>
+        <div>
+          <iframe title="Kort" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=11.3501%2C55.4024%2C11.3581%2C55.4059&amp;layer=mapnik&amp;marker=55.4041327%2C11.3541364"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© JavaHuset · Nygade 2, 4200 Slagelse · Siden bruger ingen cookies.</footer>
+<a class="btn main fab" href="tel:+4558520577">📞 Ring til JavaHuset</a>
+</body>
+</html>
