@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Bertrams demo-mappe</title>
+<style>
+  :root { --bg:#f4f6f5; --card:#fff; --text:#16201c; --muted:#5b6762; --accent:#0b6e4f; --line:#e1e6e3; --warn:#9a6a00; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#0f1412; --card:#161d1a; --text:#e8eeeb; --muted:#9aa8a2; --accent:#4cc08f; --line:#26302c; --warn:#e0b04a; } }
+  * { box-sizing:border-box; margin:0; }
+  body { background:var(--bg); color:var(--text); font:16px/1.5 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif; }
+  main { max-width:640px; margin:auto; padding:20px 16px 48px; }
+  h1 { font-size:1.5rem; margin-bottom:4px; }
+  .lead { color:var(--muted); margin-bottom:18px; font-size:.95rem; }
+  h2 { font-size:.8rem; text-transform:uppercase; letter-spacing:.12em; color:var(--muted); margin:22px 0 8px; }
+  .item { display:block; background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-bottom:10px; text-decoration:none; color:inherit; }
+  .item strong { display:block; font-size:1.05rem; }
+  .item span { color:var(--muted); font-size:.88rem; }
+  .item .go { float:right; color:var(--accent); font-weight:700; }
+  .warn { color:var(--warn) !important; }
+  .tips { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; font-size:.92rem; }
+  .tips li { margin:4px 0 4px 18px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Demo-mappe</h1>
+  <p class="lead">Tryk på et firma for at åbne demoen. Giv dem telefonen og lad dem selv scrolle.</p>
+
+  <h2>Mandag 16/11 · Jernbanegade &amp; Rosengade</h2>
+  <a class="item" href="by-koca/"><span class="go">Åbn →</span><strong>Hair Academy by Koca</strong><span>Frisør · Jernbanegade 7A · åben tirs-fre 10-17</span></a>
+  <a class="item" href="pancakez/"><span class="go">Åbn →</span><strong>Pancake'Z Café</strong><span>Dessertcafé · Rosengade 11B · <b class="warn">åbner først kl. 15</b></span></a>
+
+  <h2>Tirsdag 17/11 · Gågaden &amp; Sct. Mikkelsgade</h2>
+  <a class="item" href="javahuset/"><span class="go">Åbn →</span><strong>JavaHuset</strong><span>Kaffe, te, gavekurve · Nygade 2 · <b class="warn">spørg om åbningstider</b> · deres egen side giver fejl</span></a>
+  <a class="item" href="slagelse-lille-koekken/"><span class="go">Åbn →</span><strong>Slagelse Lille Køkken</strong><span>Burgere · Sct. Mikkelsgade 2 · <b class="warn">spørg om åbningstider og menu</b></span></a>
+
+  <h2>Onsdag 18/11 · Uden for midtbyen</h2>
+  <a class="item" href="hellig-anders/"><span class="go">Åbn →</span><strong>Hellig Anders Konditori</strong><span>Konditori · Valbyvej 11 · <b class="warn">spørg om åbningstider</b></span></a>
+  <a class="item" href="salon-gentlemen/"><span class="go">Åbn →</span><strong>Salon Gentlemen</strong><span>Herrefrisør · Pantholm 45 · åben tirs-fre 9.30-17.30</span></a>
+
+  <h2>Før du går ind</h2>
+  <div class="tips">
+    <ul>
+      <li>Spørg efter ejeren.</li>
+      <li>Undgå frokost (11.30-13) og når der er kø.</li>
+      <li>Pris: 1.500 kr, eller 1.200 kr ved ja i dag. Lille side: 900 kr.</li>
+      <li>Ja → halvdelen på MobilePay nu, og tjek at pengene er kommet.</li>
+      <li>Skriv til Claude efter hvert besøg: ja / måske / nej.</li>
+    </ul>
+  </div>
+</main>
+</body>
+</html>
