@@ -5,55 +5,49 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
 <title>Pancake'Z Café · Pandekager og desserter i Slagelse</title>
-<meta name="description" content="Pancake'Z Café på Rosengade 11B i Slagelse: pandekager, vafler, crepes, churros, milkshakes og kaffe. Spis her, hent eller få leveret.">
+<meta name="description" content="Pancake'Z Café på Rosengade 11B i Slagelse. Pandekager, vafler, crepes, kager og milkshakes. Spis her, hent selv eller bestil via Wolt.">
 <style>
-  :root { --bg:#fff8f1; --text:#3b2418; --muted:#7a5b4b; --pink:#ff7aa2; --caramel:#e89b4f; --card:#fff; --line:#f1dfd0; }
+  :root { --bg:#f7f2ea; --bg2:#efe7db; --text:#2e211a; --muted:#7a6a5e; --accent:#a3472f; --line:#ddd0bf; }
   * { box-sizing:border-box; margin:0; }
   html { scroll-behavior:smooth; }
   body { background:var(--bg); color:var(--text); font:16px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif; }
   a { color:inherit; }
-  .demo { background:var(--text); color:#fff; text-align:center; font-size:.8rem; padding:6px 12px; }
-  header { position:sticky; top:0; z-index:5; background:rgba(255,248,241,.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
-  .nav { max-width:1040px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:12px 16px; }
-  .logo { font-weight:800; font-size:1.3rem; text-decoration:none; letter-spacing:-.02em; }
-  .logo span { color:var(--pink); }
-  .nav a.order { background:var(--pink); color:#fff; padding:9px 18px; border-radius:999px; text-decoration:none; font-weight:700; font-size:.9rem; }
-  .hero { padding:64px 16px 56px; text-align:center; background:
-      radial-gradient(circle at 15% 25%, #ffd6e3 0 90px, transparent 91px),
-      radial-gradient(circle at 88% 70%, #ffe1c2 0 120px, transparent 121px),
-      radial-gradient(circle at 75% 15%, #ffe9f0 0 60px, transparent 61px), var(--bg); }
-  .stack { font-size:4.2rem; line-height:1; margin-bottom:10px; }
-  .hero h1 { font-size:clamp(2.2rem,8vw,4rem); line-height:1.05; letter-spacing:-.03em; margin-bottom:14px; }
-  .hero h1 em { font-style:normal; color:var(--pink); }
-  .hero p { color:var(--muted); max-width:480px; margin:0 auto 26px; font-size:1.05rem; }
-  .btns { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
-  .btn { padding:13px 24px; border-radius:999px; text-decoration:none; font-weight:700; }
-  .btn.pink { background:var(--pink); color:#fff; box-shadow:0 6px 18px rgba(255,122,162,.35); }
-  .btn.line { border:2px solid var(--text); }
+  .serif { font-family:Georgia,"Times New Roman",serif; }
+  .demo { background:var(--text); color:var(--bg); text-align:center; font-size:.8rem; padding:6px 12px; }
+  header { position:sticky; top:0; z-index:5; background:rgba(247,242,234,.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+  .nav { max-width:960px; margin:auto; display:flex; align-items:center; justify-content:space-between; padding:12px 16px; }
+  .logo { font-family:Georgia,"Times New Roman",serif; font-size:1.3rem; text-decoration:none; }
+  .nav nav a { text-decoration:none; color:var(--muted); margin-left:18px; font-size:.95rem; }
+  .nav nav a:hover { color:var(--accent); }
+  @media (max-width:640px){ .nav nav { display:none; } }
+  .hero { padding:72px 16px 64px; text-align:center; border-bottom:1px solid var(--line); }
+  .hero small { color:var(--accent); letter-spacing:.25em; text-transform:uppercase; font-size:.78rem; }
+  .hero h1 { font-family:Georgia,"Times New Roman",serif; font-weight:400; font-size:clamp(2.3rem,8vw,4.2rem); line-height:1.08; margin:14px 0 18px; }
+  .hero p { color:var(--muted); max-width:480px; margin:0 auto 28px; }
+  .btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+  .btn { display:inline-block; padding:13px 26px; border-radius:999px; text-decoration:none; font-weight:600; }
+  .btn.main { background:var(--accent); color:#fff; }
+  .btn.ghost { border:1px solid var(--accent); color:var(--accent); }
   section { padding:64px 16px; }
-  .wrap { max-width:1040px; margin:auto; }
-  h2 { font-size:clamp(1.7rem,4.5vw,2.4rem); letter-spacing:-.02em; margin-bottom:6px; }
-  .sub { color:var(--muted); margin-bottom:28px; }
-  .tabs { display:flex; gap:8px; flex-wrap:wrap; margin-bottom:20px; }
-  .tabs span { background:var(--card); border:1px solid var(--line); border-radius:999px; padding:5px 14px; font-size:.88rem; }
-  .menu { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
-  .item { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:18px; display:flex; justify-content:space-between; gap:12px; align-items:flex-start; }
-  .item h3 { font-size:1.02rem; }
-  .item p { color:var(--muted); font-size:.88rem; }
-  .price { font-weight:800; color:var(--pink); white-space:nowrap; }
-  .tag { display:inline-block; background:#ffe3ec; color:#c2386a; font-size:.72rem; font-weight:700; padding:2px 8px; border-radius:999px; margin-bottom:4px; }
-  .note { color:var(--muted); font-size:.9rem; margin-top:16px; }
-  .band { background:var(--text); color:#fff; border-radius:28px; padding:40px 24px; text-align:center; }
-  .band p { color:#e8d5c8; margin:8px 0 22px; }
+  .wrap { max-width:960px; margin:auto; }
+  h2 { font-family:Georgia,"Times New Roman",serif; font-weight:400; font-size:clamp(1.7rem,4vw,2.4rem); margin-bottom:8px; }
+  .sub { color:var(--muted); margin-bottom:32px; }
+  .menu { display:grid; gap:40px; grid-template-columns:1fr 1fr; }
+  @media (max-width:760px){ .menu { grid-template-columns:1fr; gap:28px; } }
+  .menu h3 { font-size:.78rem; letter-spacing:.2em; text-transform:uppercase; color:var(--accent); font-weight:600; margin-bottom:6px; }
+  .row { display:flex; justify-content:space-between; gap:16px; padding:11px 0; border-bottom:1px solid var(--line); }
+  .row span:last-child { color:var(--muted); white-space:nowrap; font-variant-numeric:tabular-nums; }
+  .note { color:var(--muted); font-size:.9rem; margin-top:24px; }
+  .photo { aspect-ratio:16/9; border-radius:16px; background:var(--bg2); border:1px solid var(--line); display:grid; place-items:center; color:var(--muted); font-size:.85rem; text-align:center; padding:20px; }
   .info { display:grid; gap:16px; grid-template-columns:1fr 1fr; }
   @media (max-width:760px){ .info { grid-template-columns:1fr; } }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:20px; }
+  .card { background:#fbf8f3; border:1px solid var(--line); border-radius:16px; padding:22px; }
   table { width:100%; border-collapse:collapse; }
-  td { padding:8px 0; border-bottom:1px dashed var(--line); }
-  td:last-child { text-align:right; font-weight:600; }
-  iframe { width:100%; height:280px; border:0; border-radius:18px; }
-  footer { text-align:center; padding:28px 16px 96px; color:var(--muted); font-size:.9rem; }
-  .fab { position:fixed; bottom:14px; left:50%; transform:translateX(-50%); z-index:6; }
+  td { padding:9px 0; border-bottom:1px solid var(--line); }
+  td:last-child { text-align:right; color:var(--muted); }
+  iframe { width:100%; height:280px; border:0; border-radius:14px; }
+  footer { text-align:center; padding:32px 16px 96px; color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); }
+  .fab { position:fixed; bottom:14px; left:50%; transform:translateX(-50%); z-index:6; box-shadow:0 8px 24px rgba(46,33,26,.25); }
   @media (min-width:761px){ .fab { display:none; } }
 </style>
 </head>
@@ -62,79 +56,86 @@
 
 <header>
   <div class="nav">
-    <a class="logo" href="#top">Pancake'<span>Z</span></a>
-    <a class="order" href="https://wolt.com/da/dnk/slagelse/restaurant/pancakez-caf" target="_blank" rel="noopener">Bestil på Wolt</a>
+    <a class="logo" href="#top">Pancake'Z</a>
+    <nav><a href="#menu">Menu</a><a href="#find">Find os</a><a href="https://wolt.com/da/dnk/slagelse/restaurant/pancakez-caf" target="_blank" rel="noopener">Bestil</a></nav>
   </div>
 </header>
 
 <main id="top">
   <div class="hero">
-    <div class="stack">🥞</div>
-    <h1>Når livet byder på hygge,<br>har vi <em>desserten</em> klar</h1>
-    <p>Fluffy pancakes, belgiske vafler, crepes, churros og milkshakes. Midt i Slagelse på Rosengade.</p>
+    <small>Café · Rosengade 11B · Slagelse</small>
+    <h1>Pandekager, vafler<br>og desserter</h1>
+    <p>Spis her, hent selv eller få det leveret via Wolt. Åbent hver dag fra eftermiddagen.</p>
     <div class="btns">
-      <a class="btn pink" href="#menu">Se menuen</a>
-      <a class="btn line" href="#find">Find os</a>
+      <a class="btn main" href="https://wolt.com/da/dnk/slagelse/restaurant/pancakez-caf" target="_blank" rel="noopener">Bestil på Wolt</a>
+      <a class="btn ghost" href="#menu">Se menuen</a>
     </div>
   </div>
 
   <section id="menu">
     <div class="wrap">
       <h2>Menu</h2>
-      <p class="sub">Byg din egen, eller vælg en af vores favoritter.</p>
-      <div class="tabs"><span>Byg selv</span><span>Desserter</span><span>Kager</span><span>Milkshakes</span><span>Kaffe</span></div>
+      <p class="sub">Udvalg fra menukortet.</p>
       <div class="menu">
-        <div class="item"><div><span class="tag">Mest bestilt</span><h3>Byg-selv Fluffy Pancake</h3><p>Tykke, luftige pancakes med dit valg af topping.</p></div><div class="price">75 kr</div></div>
-        <div class="item"><div><span class="tag">Mest bestilt</span><h3>Byg-selv Mini pandekager</h3><p>Små pandekager, store mængder topping.</p></div><div class="price">79 kr</div></div>
-        <div class="item"><div><h3>Byg-selv belgisk vaffel</h3><p>Sprød udenpå, blød indeni.</p></div><div class="price">75 kr</div></div>
-        <div class="item"><div><h3>Byg-selv Crepe</h3><p>Tynd fransk pandekage med fyld efter eget valg.</p></div><div class="price">69 kr</div></div>
-        <div class="item"><div><h3>Churros</h3><p>Med kanelsukker og dip.</p></div><div class="price">99 kr</div></div>
-        <div class="item"><div><h3>Oreo Love</h3><p>Til dem, der elsker Oreo.</p></div><div class="price">65 kr</div></div>
-        <div class="item"><div><h3>Choco Loco</h3><p>Chokolade, chokolade og chokolade.</p></div><div class="price">65 kr</div></div>
-        <div class="item"><div><h3>Triple chocolate cookie dough</h3><p>Fra Frozen Factory.</p></div><div class="price">130 kr</div></div>
-        <div class="item"><div><h3>Dagens cheesecake</h3><p>Spørg hvad dagens er.</p></div><div class="price">65 kr</div></div>
-        <div class="item"><div><h3>Softice med drys</h3><p>Klassikeren.</p></div><div class="price">35 kr</div></div>
-        <div class="item"><div><h3>Iskaffe 0,4 l</h3><p>Kold og cremet.</p></div><div class="price">65 kr</div></div>
-        <div class="item"><div><h3>Cappuccino</h3><p>Til pandekagerne.</p></div><div class="price">45 kr</div></div>
+        <div>
+          <h3>Byg selv</h3>
+          <div class="row"><span>Fluffy pancake</span><span>75 kr</span></div>
+          <div class="row"><span>Mini pandekager</span><span>79 kr</span></div>
+          <div class="row"><span>Belgisk vaffel</span><span>75 kr</span></div>
+          <div class="row"><span>Crepe</span><span>69 kr</span></div>
+          <h3 style="margin-top:28px">Desserter</h3>
+          <div class="row"><span>Churros</span><span>99 kr</span></div>
+          <div class="row"><span>Oreo Love</span><span>65 kr</span></div>
+          <div class="row"><span>Choco Loco</span><span>65 kr</span></div>
+          <div class="row"><span>Triple chocolate cookie dough</span><span>130 kr</span></div>
+          <div class="row"><span>Softice med drys</span><span>35 kr</span></div>
+        </div>
+        <div>
+          <h3>Kager</h3>
+          <div class="row"><span>Dagens cheesecake</span><span>65 kr</span></div>
+          <div class="row"><span>Dagens kage</span><span>65 kr</span></div>
+          <h3 style="margin-top:28px">Drikke</h3>
+          <div class="row"><span>Cappuccino</span><span>45 kr</span></div>
+          <div class="row"><span>Iskaffe 0,4 l</span><span>65 kr</span></div>
+          <div class="row"><span>Cloudy Mint 0,4 l</span><span>65 kr</span></div>
+          <div class="row"><span>Kildevand 0,5 l</span><span>30 kr</span></div>
+        </div>
       </div>
-      <p class="note">Priser kan ændre sig. Se hele menuen på Wolt.</p>
+      <p class="note">Milkshakes, saft og flere drikke på det fulde menukort. Priserne kan ændre sig.</p>
     </div>
   </section>
 
-  <section>
+  <section style="padding-top:0">
     <div class="wrap">
-      <div class="band">
-        <h2>Sulten derhjemme?</h2>
-        <p>Vi leverer i Slagelse via Wolt, eller du kan hente selv.</p>
-        <a class="btn pink" href="https://wolt.com/da/dnk/slagelse/restaurant/pancakez-caf" target="_blank" rel="noopener">Bestil nu</a>
-      </div>
+      <div class="photo">Her kommer et billede fra caféen</div>
     </div>
   </section>
 
-  <section id="find">
+  <section id="find" style="padding-top:0">
     <div class="wrap">
       <h2>Åbningstider &amp; adresse</h2>
-      <p class="sub">Kig forbi efter skole, arbejde eller til en hyggelig aften.</p>
+      <p class="sub">Rosengade 11B, 4200 Slagelse.</p>
       <div class="info">
         <div class="card">
           <table>
-            <tr><td>Mandag – torsdag</td><td>15 – 22</td></tr>
-            <tr><td>Fredag – lørdag</td><td>14 – 23</td></tr>
-            <tr><td>Søndag</td><td>15 – 22</td></tr>
+            <tr><td>Mandag – torsdag</td><td>15.00 – 22.00</td></tr>
+            <tr><td>Fredag – lørdag</td><td>14.00 – 23.00</td></tr>
+            <tr><td>Søndag</td><td>15.00 – 22.00</td></tr>
           </table>
-          <p class="note"><strong>Rosengade 11B, 4200 Slagelse</strong><br>
-          <a href="tel:+4521862966">21 86 29 66</a> ·
-          <a href="https://www.instagram.com/pancakez_cafe/" target="_blank" rel="noopener">Instagram</a></p>
+          <p class="note" style="margin-top:16px"><a href="tel:+4521862966">21 86 29 66</a> ·
+          <a href="https://www.instagram.com/pancakez_cafe/" target="_blank" rel="noopener">Instagram</a> ·
+          <a href="https://wolt.com/da/dnk/slagelse/restaurant/pancakez-caf" target="_blank" rel="noopener">Wolt</a></p>
         </div>
         <div>
           <iframe title="Kort" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=11.3495%2C55.4018%2C11.3575%2C55.4053&amp;layer=mapnik&amp;marker=55.4035397%2C11.3534937"></iframe>
+          <p class="note" style="margin-top:10px"><a href="https://www.openstreetmap.org/directions?to=55.4035397%2C11.3534937" target="_blank" rel="noopener">Find vej →</a></p>
         </div>
       </div>
     </div>
   </section>
 </main>
 
-<footer>© Pancake'Z Café · Rosengade 11B, 4200 Slagelse · Siden bruger ingen cookies.</footer>
-<a class="btn pink fab" href="https://wolt.com/da/dnk/slagelse/restaurant/pancakez-caf" target="_blank" rel="noopener">🥞 Bestil på Wolt</a>
+<footer>© Pancake'Z Café · Rosengade 11B, 4200 Slagelse<br><small>Siden bruger ingen cookies.</small></footer>
+<a class="btn main fab" href="https://wolt.com/da/dnk/slagelse/restaurant/pancakez-caf" target="_blank" rel="noopener">Bestil på Wolt</a>
 </body>
 </html>
