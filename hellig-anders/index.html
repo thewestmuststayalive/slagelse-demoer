@@ -4,53 +4,48 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex, nofollow">
-<title>Hellig Anders Konditori · Kager og kransekage i Slagelse</title>
-<meta name="description" content="Hellig Anders Konditori på Valbyvej 11 i Slagelse. Lagkager, kransekage, brunsviger og bestillinger til fester og firmaer.">
+<title>Hellig Anders Konditori · Konditori i Slagelse</title>
+<meta name="description" content="Hellig Anders Konditori på Valbyvej 11 i Slagelse. Kransekage, brunsviger, smørkage og kager. Bestil til fest og firma.">
 <style>
-  :root { --bg:#fbf6ee; --text:#3a2a1e; --muted:#7b6656; --accent:#a4562f; --card:#fff; --line:#eadfce; --cream:#f3e7d3; }
+  :root { --bg:#faf6ef; --bg2:#f1e9dc; --text:#33261d; --muted:#7c6b5d; --accent:#8a4a2b; --line:#e0d4c3; }
   * { box-sizing:border-box; margin:0; }
   html { scroll-behavior:smooth; }
-  body { background:var(--bg); color:var(--text); font:16px/1.65 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif; }
+  body { background:var(--bg); color:var(--text); font:16px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,sans-serif; }
   a { color:inherit; }
-  .demo { background:var(--accent); color:#fff; text-align:center; font-size:.8rem; padding:6px 12px; }
-  header { position:sticky; top:0; z-index:5; background:rgba(251,246,238,.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
-  .nav { max-width:1040px; margin:auto; display:flex; justify-content:space-between; align-items:center; padding:12px 16px; }
-  .logo { text-decoration:none; font-family:Georgia,serif; font-size:1.2rem; }
-  .logo small { display:block; font-family:"Segoe UI",system-ui,sans-serif; font-size:.68rem; letter-spacing:.2em; text-transform:uppercase; color:var(--muted); }
-  .nav nav a { margin-left:18px; text-decoration:none; color:var(--muted); font-size:.95rem; }
+  .demo { background:var(--text); color:var(--bg); text-align:center; font-size:.8rem; padding:6px 12px; }
+  header { position:sticky; top:0; z-index:5; background:rgba(250,246,239,.94); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+  .nav { max-width:960px; margin:auto; display:flex; align-items:center; justify-content:space-between; padding:12px 16px; }
+  .logo { font-family:Georgia,"Times New Roman",serif; font-size:1.3rem; text-decoration:none; }
+  .nav nav a { text-decoration:none; color:var(--muted); margin-left:18px; font-size:.95rem; }
+  .nav nav a:hover { color:var(--accent); }
   @media (max-width:640px){ .nav nav { display:none; } }
-  .hero { padding:72px 16px; }
-  .hero .wrap { display:grid; grid-template-columns:1.1fr .9fr; gap:36px; align-items:center; }
-  @media (max-width:760px){ .hero .wrap { grid-template-columns:1fr; } }
-  .kicker { color:var(--accent); font-weight:700; letter-spacing:.14em; text-transform:uppercase; font-size:.78rem; }
-  .hero h1 { font-family:Georgia,serif; font-weight:400; font-size:clamp(2.2rem,6.5vw,3.8rem); line-height:1.1; margin:12px 0 16px; }
-  .hero p { color:var(--muted); margin-bottom:26px; max-width:460px; }
-  .btns { display:flex; gap:10px; flex-wrap:wrap; }
-  .btn { padding:13px 24px; border-radius:10px; text-decoration:none; font-weight:700; }
+  .hero { padding:72px 16px 64px; text-align:center; border-bottom:1px solid var(--line); }
+  .hero small { color:var(--accent); letter-spacing:.25em; text-transform:uppercase; font-size:.78rem; }
+  .hero h1 { font-family:Georgia,"Times New Roman",serif; font-weight:400; font-size:clamp(2.3rem,8vw,4.2rem); line-height:1.08; margin:14px 0 18px; }
+  .hero p { color:var(--muted); max-width:480px; margin:0 auto 28px; }
+  .btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
+  .btn { display:inline-block; padding:13px 26px; border-radius:999px; text-decoration:none; font-weight:600; }
   .btn.main { background:var(--accent); color:#fff; }
-  .btn.alt { border:1.5px solid var(--accent); color:var(--accent); }
-  .plate { aspect-ratio:1; border-radius:50%; background:radial-gradient(circle at 50% 45%, #fff 0 30%, var(--cream) 31% 58%, #e7d6bb 59% 62%, var(--cream) 63%); display:grid; place-items:center; font-size:5.5rem; box-shadow:0 24px 60px rgba(120,80,40,.15); max-width:380px; margin:auto; }
+  .btn.ghost { border:1px solid var(--accent); color:var(--accent); }
   section { padding:64px 16px; }
-  .wrap { max-width:1040px; margin:auto; }
-  h2 { font-family:Georgia,serif; font-weight:400; font-size:clamp(1.7rem,4.5vw,2.4rem); margin-bottom:6px; }
-  .sub { color:var(--muted); margin-bottom:28px; }
-  .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:22px; }
-  .card .em { font-size:2rem; margin-bottom:8px; }
-  .card h3 { font-family:Georgia,serif; font-weight:400; font-size:1.25rem; margin-bottom:4px; }
-  .card p { color:var(--muted); font-size:.94rem; }
-  .order { background:var(--cream); border-block:1px solid var(--line); }
-  .steps { display:grid; gap:14px; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); counter-reset:s; margin-bottom:26px; }
-  .steps div { background:var(--card); border-radius:14px; padding:18px; border:1px solid var(--line); }
-  .steps div::before { counter-increment:s; content:counter(s); display:inline-grid; place-items:center; width:28px; height:28px; border-radius:50%; background:var(--accent); color:#fff; font-weight:700; font-size:.85rem; margin-bottom:8px; }
-  blockquote { font-family:Georgia,serif; font-size:1.15rem; border-left:3px solid var(--accent); padding-left:16px; color:var(--text); }
-  blockquote cite { display:block; font-family:"Segoe UI",system-ui,sans-serif; font-style:normal; font-size:.85rem; color:var(--muted); margin-top:6px; }
+  .wrap { max-width:960px; margin:auto; }
+  h2 { font-family:Georgia,"Times New Roman",serif; font-weight:400; font-size:clamp(1.7rem,4vw,2.4rem); margin-bottom:8px; }
+  .sub { color:var(--muted); margin-bottom:32px; }
+  .list { display:grid; grid-template-columns:1fr 1fr; column-gap:40px; }
+  .list div { font-family:Georgia,"Times New Roman",serif; font-size:1.25rem; padding:14px 0; border-bottom:1px solid var(--line); }
+  @media (max-width:640px){ .list { grid-template-columns:1fr; } }
+  .note { color:var(--muted); font-size:.9rem; margin-top:20px; }
+  .band { background:var(--bg2); border-block:1px solid var(--line); }
+  .two { display:grid; gap:32px; grid-template-columns:1fr 1fr; align-items:center; }
+  @media (max-width:760px){ .two { grid-template-columns:1fr; } }
+  .photo { aspect-ratio:4/3; border-radius:16px; background:var(--bg); border:1px solid var(--line); display:grid; place-items:center; color:var(--muted); font-size:.85rem; text-align:center; padding:20px; }
   .info { display:grid; gap:16px; grid-template-columns:1fr 1fr; }
   @media (max-width:760px){ .info { grid-template-columns:1fr; } }
-  iframe { width:100%; height:280px; border:0; border-radius:16px; }
-  .note { color:var(--muted); font-size:.92rem; margin-top:12px; }
-  footer { text-align:center; padding:28px 16px 96px; color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); }
-  .fab { position:fixed; bottom:14px; left:50%; transform:translateX(-50%); z-index:6; box-shadow:0 8px 24px rgba(120,60,20,.3); }
+  .card { background:#fdfbf7; border:1px solid var(--line); border-radius:16px; padding:22px; }
+  .placeholder { color:var(--muted); border:1px dashed var(--line); border-radius:10px; padding:18px; text-align:center; font-size:.9rem; }
+  iframe { width:100%; height:280px; border:0; border-radius:14px; }
+  footer { text-align:center; padding:32px 16px 96px; color:var(--muted); font-size:.9rem; border-top:1px solid var(--line); }
+  .fab { position:fixed; bottom:14px; left:50%; transform:translateX(-50%); z-index:6; box-shadow:0 8px 24px rgba(51,38,29,.25); }
   @media (min-width:761px){ .fab { display:none; } }
 </style>
 </head>
@@ -59,76 +54,70 @@
 
 <header>
   <div class="nav">
-    <a class="logo" href="#top">Hellig Anders<small>Konditori · Slagelse</small></a>
-    <nav><a href="#kager">Kager</a><a href="#bestil">Bestil</a><a href="#find">Find os</a></nav>
+    <a class="logo" href="#top">Hellig Anders</a>
+    <nav><a href="#udvalg">Udvalg</a><a href="#bestil">Bestilling</a><a href="#find">Find os</a></nav>
   </div>
 </header>
 
 <main id="top">
   <div class="hero">
-    <div class="wrap">
-      <div>
-        <span class="kicker">Slagelses konditori i over 25 år</span>
-        <h1>Noget lækkert til ganen, og et smil på læben</h1>
-        <p>Lagkager, kransekage, brunsviger og alt det gode fra konditoriet. Til hverdag, til fest og til firmaet.</p>
-        <div class="btns">
-          <a class="btn main" href="tel:+4558535802">Ring og bestil: 58 53 58 02</a>
-          <a class="btn alt" href="#kager">Se udvalget</a>
-        </div>
-      </div>
-      <div class="plate" aria-hidden="true">🎂</div>
+    <small>Konditori · Valbyvej 11 · Slagelse</small>
+    <h1>Konditori i Slagelse<br>i over 25 år</h1>
+    <p>Kransekage, brunsviger, smørkage og kager fra eget konditori.</p>
+    <div class="btns">
+      <a class="btn main" href="tel:+4558535802">Ring og bestil: 58 53 58 02</a>
+      <a class="btn ghost" href="#udvalg">Se udvalget</a>
     </div>
   </div>
 
-  <section id="kager">
+  <section id="udvalg">
     <div class="wrap">
-      <h2>Fra vores disk</h2>
-      <p class="sub">Bagt fra bunden hos os på Valbyvej.</p>
-      <div class="grid">
-        <div class="card"><div class="em">🎂</div><h3>Lagkager</h3><p>Til fødselsdage, barnedåb og alle andre dage, der skal fejres.</p></div>
-        <div class="card"><div class="em">🥨</div><h3>Kransekage</h3><p>Hele kager, toppe eller stykker med nougat. Til bryllup, jubilæum og firmafester.</p></div>
-        <div class="card"><div class="em">🍰</div><h3>Brunsviger &amp; smørkage</h3><p>De fynske klassikere. Hold øje med dagens tilbud.</p></div>
-        <div class="card"><div class="em">🧁</div><h3>Kager &amp; småkager</h3><p>Dagens udvalg i disken. Kom forbi og se.</p></div>
+      <h2>Fra konditoriet</h2>
+      <p class="sub">Et udvalg. Kig forbi og se, hvad der er i disken i dag.</p>
+      <div class="list">
+        <div>Kransekage</div>
+        <div>Brunsviger</div>
+        <div>Smørkage</div>
+        <div>Lagkager</div>
+        <div>Kager</div>
+        <div>Brød</div>
       </div>
+      <p class="note">Det fulde udvalg og priser indsættes her.</p>
     </div>
   </section>
 
-  <section id="bestil" class="order">
-    <div class="wrap">
-      <h2>Bestil til fest eller firma</h2>
-      <p class="sub">Vi leverer både den lille lagkage og 300 stykker kransekage til det store arrangement.</p>
-      <div class="steps">
-        <div><strong>Ring eller kig forbi</strong><br><span style="color:var(--muted)">Fortæl hvad og hvor mange.</span></div>
-        <div><strong>Vi aftaler detaljerne</strong><br><span style="color:var(--muted)">Smag, størrelse, pynt og dato.</span></div>
-        <div><strong>Hent eller få leveret</strong><br><span style="color:var(--muted)">Klar til tiden.</span></div>
+  <section id="bestil" class="band">
+    <div class="wrap two">
+      <div class="photo">Her kommer et billede fra konditoriet</div>
+      <div>
+        <h2>Bestil til fest og firma</h2>
+        <p class="sub">Skal I bruge kransekage til brylluppet, kage til fødselsdagen eller noget til kaffen på arbejdet? Ring eller kig forbi, så aftaler vi resten.</p>
+        <a class="btn main" href="tel:+4558535802">Ring: 58 53 58 02</a>
       </div>
-      <blockquote>"Jeg kan på det kraftigste anbefale Hellig Anders Konditori."<cite>Kunde, der bestilte 300 stykker kransekage til et firmaarrangement</cite></blockquote>
     </div>
   </section>
 
   <section id="find">
     <div class="wrap">
-      <h2>Find os</h2>
-      <p class="sub">Ring gerne i forvejen, hvis du vil være sikker på at få din favorit.</p>
+      <h2>Åbningstider &amp; adresse</h2>
+      <p class="sub">Valbyvej 11, 4200 Slagelse.</p>
       <div class="info">
         <div class="card">
-          <p><strong>Hellig Anders Konditori</strong><br>Valbyvej 11, 4200 Slagelse</p>
-          <p class="note"><strong>Telefon:</strong> <a href="tel:+4558535802">58 53 58 02</a></p>
-          <p class="note"><strong>Åbningstider:</strong> [indsættes fra konditoriet]</p>
-          <p class="note">
-            <a href="https://www.facebook.com/helliganderskonditoriet/" target="_blank" rel="noopener">Facebook</a> ·
-            <a href="https://www.instagram.com/hellig_anders_konditoriet/" target="_blank" rel="noopener">Instagram</a>
-          </p>
+          <p class="placeholder">Her kommer jeres åbningstider</p>
+          <p class="note"><a href="tel:+4558535802">58 53 58 02</a> ·
+          <a href="https://www.facebook.com/helliganderskonditoriet/" target="_blank" rel="noopener">Facebook</a> ·
+          <a href="https://www.instagram.com/hellig_anders_konditoriet/" target="_blank" rel="noopener">Instagram</a></p>
         </div>
         <div>
           <iframe title="Kort" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=11.3477%2C55.4075%2C11.3557%2C55.4110&amp;layer=mapnik&amp;marker=55.4093028%2C11.3517631"></iframe>
+          <p class="note" style="margin-top:10px"><a href="https://www.openstreetmap.org/directions?to=55.4093028%2C11.3517631" target="_blank" rel="noopener">Find vej →</a></p>
         </div>
       </div>
     </div>
   </section>
 </main>
 
-<footer>© Hellig Anders Konditori · Valbyvej 11, 4200 Slagelse · Siden bruger ingen cookies.</footer>
-<a class="btn main fab" href="tel:+4558535802">📞 Ring og bestil</a>
+<footer>© Hellig Anders Konditori · Valbyvej 11, 4200 Slagelse<br><small>Siden bruger ingen cookies.</small></footer>
+<a class="btn main fab" href="tel:+4558535802">Ring og bestil</a>
 </body>
 </html>
