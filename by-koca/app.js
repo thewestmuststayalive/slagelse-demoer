@@ -22,7 +22,7 @@ var KocaLogic = (function () {
     da: {
       title: "Hair Academy Slagelse by Koca · Frisør i Slagelse",
       skip: "Spring til indhold", home: "by Koca, til toppen", navLabel: "Sektioner", langLabel: "Sprog",
-      book: "Book tid", badge: "BOOK TID · BOOK TID · BOOK TID · ",
+      book: "Book tid", badge: "BOOK TID · BOOK TID · BOOK TID · ",
       lede1: "Klip, farve og balayage", lede2: "med international erfaring.",
       call: "Ring 71 68 13 48",
       s1: "Behandlinger", s2: "Før & efter", s3: "Salonen", s4: "Besøg os",
@@ -67,7 +67,7 @@ var KocaLogic = (function () {
     en: {
       title: "Hair Academy Slagelse by Koca · Hairdresser in Slagelse",
       skip: "Skip to content", home: "by Koca, back to top", navLabel: "Sections", langLabel: "Language",
-      book: "Book now", badge: "BOOK NOW · BOOK NOW · BOOK NOW · ",
+      book: "Book now", badge: "BOOK NOW · BOOK NOW · BOOK NOW · ",
       lede1: "Cuts, colour and balayage", lede2: "with international experience.",
       call: "Call 71 68 13 48",
       s1: "Treatments", s2: "Before & after", s3: "The salon", s4: "Visit us",
