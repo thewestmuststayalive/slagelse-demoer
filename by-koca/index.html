@@ -17,7 +17,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0b09'/%3E%3Ctext x='32' y='47' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='46' fill='%23c9a55c'%3EK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
 <link rel="stylesheet" href="https://fonts.bunny.net/css?family=bodoni-moda:400,400i,500i|jost:300,400,500&amp;display=swap">
-<link rel="stylesheet" href="style.css?v=3">
+<link rel="stylesheet" href="style.css?v=4">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -40,7 +40,7 @@
 }
 </script>
 <!-- Small file, loaded here on purpose: it marks the page as "js" before the first paint. -->
-<script src="app.js?v=3"></script>
+<script src="app.js?v=4"></script>
 </head>
 <body>
 <a class="skip" href="#indhold" data-i18n="skip">Spring til indhold</a>
@@ -193,8 +193,17 @@
         </div>
       </div>
 
-      <!-- Placeholder for the salon: the price list -->
-      <p class="note treat__note" data-reveal><span data-i18n="priceNote">Her kommer jeres prisliste.</span></p>
+      <!-- The salon's own price list (from their sign) -->
+      <div class="prices" data-reveal>
+        <h3 class="caps prices__h" data-i18n="pricesTitle">Prisliste</h3>
+        <dl>
+          <div><dt data-i18n="p_herre">Herreklip</dt><dd>220,-</dd></div>
+          <div><dt data-i18n="p_skaeg">Skægklip</dt><dd>150,-</dd></div>
+          <div><dt data-i18n="p_herreSkaeg">Herreklip + skægklip</dt><dd>300,-</dd></div>
+          <div><dt data-i18n="p_dame">Dameklip</dt><dd>300,-</dd></div>
+          <div><dt data-i18n="p_permFarve">Permanent, krøller og farvning</dt><dd data-i18n="askPrice">Spørg for pris</dd></div>
+        </dl>
+      </div>
     </div>
   </section>
 
@@ -231,8 +240,11 @@
 
       <p class="salon__quote" data-reveal><span data-i18n="quote1">Godt håndværk.</span> <em data-i18n="quote2">Og at du går glad herfra.</em></p>
 
-      <!-- Placeholder for the salon: a photo of the salon or of Koca -->
-      <div class="salon__photo" data-reveal><span class="caps" data-i18n="photo">Her kommer jeres billede</span></div>
+      <!-- Photo from the salon's Instagram -->
+      <figure class="salon__photo" data-reveal>
+        <img src="vaeg.jpg" width="900" height="879" loading="lazy" decoding="async" alt="Salonen med BY KOCA malet i rødt på væggen" data-i18n-attr="alt:altWall">
+        <figcaption class="caps salon__credit" data-i18n="credit">Foto: by Koca</figcaption>
+      </figure>
 
       <div class="salon__body" data-reveal>
         <p class="salon__text" data-i18n="about">Hair Academy Slagelse by Koca ligger på Jernbanegade, få minutters gang fra stationen. Bag stolen står en frisør med erfaring fra hele verden.</p>
@@ -242,6 +254,11 @@
           <div><dt class="caps">Jernbanegade</dt><dd>7A</dd></div>
         </dl>
         <p class="salon__stars"><span class="stars" aria-hidden="true">★★★★★</span><span data-i18n="google">Topkarakter på Google</span></p>
+        <!-- Two more photos from the salon's Instagram -->
+        <div class="salon__pair">
+          <img src="vaerktoej.jpg" width="900" height="893" loading="lazy" decoding="async" alt="Sakse og føntørrer ved arbejdspladsen" data-i18n-attr="alt:altTools">
+          <img src="produkter.jpg" width="900" height="895" loading="lazy" decoding="async" alt="Væg med hårplejeprodukter fra L'Oréal" data-i18n-attr="alt:altProducts">
+        </div>
       </div>
     </div>
   </section>
