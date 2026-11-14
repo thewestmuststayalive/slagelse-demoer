@@ -17,7 +17,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0b09'/%3E%3Ctext x='32' y='47' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='46' fill='%23c9a55c'%3EK%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.bunny.net" crossorigin>
 <link rel="stylesheet" href="https://fonts.bunny.net/css?family=bodoni-moda:400,400i,500i|jost:300,400,500&amp;display=swap">
-<link rel="stylesheet" href="style.css?v=2">
+<link rel="stylesheet" href="style.css?v=3">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -40,7 +40,7 @@
 }
 </script>
 <!-- Small file, loaded here on purpose: it marks the page as "js" before the first paint. -->
-<script src="app.js?v=2"></script>
+<script src="app.js?v=3"></script>
 </head>
 <body>
 <a class="skip" href="#indhold" data-i18n="skip">Spring til indhold</a>
@@ -88,7 +88,18 @@
             <defs><path id="badge-circle" d="M60 60m-46 0a46 46 0 1 1 92 0a46 46 0 1 1-92 0"/></defs>
             <text><textPath href="#badge-circle" textLength="289" data-i18n="badge">BOOK TID · BOOK TID · BOOK TID ·&#160;</textPath></text>
           </svg>
-          <svg class="badge__arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 18 18 6M9 6h9v9"/></svg>
+          <!-- Emblem from the salon's sign: scissors over a comb -->
+          <svg class="badge__emblem" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+            <g class="badge__comb" transform="rotate(-24 24 22)">
+              <rect x="7" y="13" width="34" height="5" rx="1.5"/>
+              <path d="M9.5 18v6M12.3 18v6M15.1 18v6M17.9 18v6M20.7 18v6M23.5 18v6M26.3 18v6M29.1 18v6M31.9 18v6M34.7 18v6M37.5 18v6"/>
+            </g>
+            <g class="badge__scissors">
+              <path d="M17 4 27.5 31M31 4 20.5 31"/>
+              <circle cx="18.5" cy="36" r="4.5"/><circle cx="29.5" cy="36" r="4.5"/>
+              <circle cx="24" cy="19.5" r="1" class="badge__pin"/>
+            </g>
+          </svg>
         </button>
       </div>
 

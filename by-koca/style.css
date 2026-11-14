@@ -210,9 +210,14 @@ html:not(.js) [data-book], html:not(.js) .lang, html:not(.js) .compare__range, h
 .badge { position: absolute; right: 0; bottom: calc(var(--word) * .62); display: grid; place-items: center; width: 96px; height: 96px; border-radius: 50%; animation: fade-up 1s .9s var(--ease) both; }
 .badge__ring { position: absolute; inset: 0; width: 100%; height: 100%; animation: spin 28s linear infinite; }
 .badge__ring text { font: 500 12px var(--sans); fill: var(--ivory); transition: fill .3s; }
-.badge__arrow { width: 26px; height: 26px; fill: none; stroke: var(--gold); stroke-width: 1.2; transition: transform .4s var(--ease); }
+/* Emblem from the salon's sign: a cream comb with gold scissors on top */
+.badge__emblem { width: 46%; height: 46%; overflow: visible; transition: transform .5s var(--ease); }
+.badge__comb rect { fill: var(--ivory); }
+.badge__comb path { fill: none; stroke: var(--ivory); stroke-width: 1.3; }
+.badge__scissors { fill: none; stroke: var(--gold); stroke-width: 2; stroke-linecap: round; }
+.badge__pin { fill: var(--ivory); stroke: none; }
 .badge:hover .badge__ring text { fill: var(--gold); }
-.badge:hover .badge__arrow { transform: translate(2px, -2px); }
+.badge:hover .badge__emblem { transform: rotate(-8deg) scale(1.05); }
 
 .hero__rule { height: 1px; margin-block: 20px 18px; background: var(--gold); transform-origin: left; animation: draw 1.5s .45s var(--ease) both; }
 
