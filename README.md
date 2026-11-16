@@ -1,5 +1,5 @@
-# Demoer til firmaer i Slagelse
+# By Koca
 
-Forslag til nye hjemmesider, lavet af Bertram Johansen. Siderne er ikke firmaernes officielle sider.
+Forslag til ny hjemmeside til Hair Academy Slagelse by Koca, lavet af Bertram Johansen. Siden er ikke salonens officielle side.
 
-Demo-mappe: https://thewestmuststayalive.github.io/slagelse-demoer/
+Side: https://thewestmuststayalive.github.io/slagelse-demoer/by-koca/
